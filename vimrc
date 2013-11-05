@@ -316,4 +316,4 @@ map <leader>spec :!bundle exec rspec spec<CR>
 " au BufAdd,BufNewFile * nested tab sball
 " set guitablabel=%t
 
-hi CursorLine cterm=NONE ctermbg=Blue ctermfg=white
+" hi CursorLine cterm=NONE ctermbg=Blue ctermfg=white
