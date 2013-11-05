@@ -300,7 +300,8 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-" nnoremap <esc> :noh<return><esc>
+" nnoremap <esc>:noh<return><esc>
+nnoremap <CR> :noh<CR>
 
 map <leader>r <Esc>:MRU<CR>
 map <leader>sf <Esc>:FufCoverageFile<CR>
