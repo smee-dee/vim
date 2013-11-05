@@ -256,8 +256,8 @@ endif
 "  ---------------------------------------------------------------------------
 " let g:solarized_termcolors=256
 set background=dark
-colorscheme molokai
 color blackboard
+colorscheme ir_black
 
 "  ---------------------------------------------------------------------------
 "  Misc
