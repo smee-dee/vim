@@ -303,14 +303,14 @@ imap <right> <nop>
 " nnoremap <esc>:noh<return><esc>
 nnoremap <CR> :noh<CR>
 
-map <leader>r <Esc>:MRU<CR>
+map <leader>l <Esc>:MRU<CR>
 map <leader>sf <Esc>:FufCoverageFile<CR>
 map <leader>sl <Esc>:FufLine<CR>
 
 let g:syntastic_ruby_exec = 'ruby19'
 
 au BufRead,BufNewFile *.tpl set filetype=smarty
-map <leader>utf8 kmuggO# -*- encoding : utf-8 -*-<Esc>`u<CR>
+map <leader>utf8 muggO<Esc>O# -*- encoding : utf-8 -*-<Esc>`u<CR>
 map <leader>spec :!bundle exec rspec spec<CR>
 
 " open each file in a new tab
