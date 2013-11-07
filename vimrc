@@ -160,6 +160,7 @@ let g:AutoCloseProtectedRegions = ["Character"]
 
 " CtrlP
 nmap <leader>f :CtrlP<cr>
+let g:ctrlp_show_hidden = 1
 
 " Add settings for tabular
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
