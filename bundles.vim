@@ -30,6 +30,7 @@ Bundle 'git://github.com/Townk/vim-autoclose.git'
 Bundle 'git://github.com/godlygeek/tabular.git'
 Bundle 'git://github.com/scrooloose/syntastic.git'
 Bundle 'https://github.com/terryma/vim-multiple-cursors'
+Bundle 'https://github.com/Lokaltog/vim-easymotion'
 
 " Language Support
 Bundle 'git://github.com/tpope/vim-rails.git'

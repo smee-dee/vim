@@ -46,31 +46,7 @@ set laststatus=2
 set number
 set relativenumber
 set undofile
-
-" Auto adjust window sizes when they become current
-set winwidth=84
-set winheight=5
-set winminheight=5
-set winheight=999
-
-set splitbelow splitright
-
-if has('mouse')
-  set mouse=a
-endif
-
-"  ---------------------------------------------------------------------------
-"  Text Formatting
-"  ---------------------------------------------------------------------------
-
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-
-set nowrap
-set textwidth=100
-set formatoptions=n
+" Auto adjust window sizes when they become current set winwidth=84 set winheight=5 set winminheight=5 set winheight=999 set splitbelow splitright if has('mouse') set mouse=a endif "  --------------------------------------------------------------------------- "  Text Formatting "  --------------------------------------------------------------------------- set tabstop=2 set shiftwidth=2 set softtabstop=2 set expandtab set nowrap set textwidth=100 set formatoptions=n
 
 " check to make sure vim has been compiled with colorcolumn support
 " before enabling it
