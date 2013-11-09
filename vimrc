@@ -46,7 +46,31 @@ set laststatus=2
 set number
 set relativenumber
 set undofile
-" Auto adjust window sizes when they become current set winwidth=84 set winheight=5 set winminheight=5 set winheight=999 set splitbelow splitright if has('mouse') set mouse=a endif "  --------------------------------------------------------------------------- "  Text Formatting "  --------------------------------------------------------------------------- set tabstop=2 set shiftwidth=2 set softtabstop=2 set expandtab set nowrap set textwidth=100 set formatoptions=n
+
+" Auto adjust window sizes when they become current
+set winwidth=84
+set winheight=5
+set winminheight=5
+set winheight=999
+
+set splitbelow splitright
+
+if has('mouse')
+  set mouse=a
+endif
+
+"  ---------------------------------------------------------------------------
+"  Text Formatting
+"  ---------------------------------------------------------------------------
+
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+set nowrap
+set textwidth=100
+set formatoptions=n
 
 " check to make sure vim has been compiled with colorcolumn support
 " before enabling it
@@ -105,6 +129,7 @@ nmap <leader>D :bufdo bd<CR>
 
 " Ignore some binary, versioning and backup files when auto-completing
 set wildignore=.svn,CVS,.git,*.swp,*.jpg,*.png,*.gif,*.pdf,*.bak
+let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**"
 " Set a lower priority for .old files
 set suffixes+=.old
 
@@ -295,9 +320,59 @@ map <leader>spec :!rspec spec<CR>
 :autocmd InsertEnter * :set norelativenumber
 :autocmd InsertLeave * :set relativenumber
 
+set shiftround " When at 3 spaces and I hit >>, go to 4, not 5.
+set nofoldenable " Say no to code folding...
 
-" open each file in a new tab
-" au BufAdd,BufNewFile * nested tab sball
-" set guitablabel=%t
+command! Q q " Bind :Q to :q
+command! Qall qall
 
-" hi CursorLine cterm=NONE ctermbg=Blue ctermfg=white
+" Disable Ex mode
+map Q <Nop>
+
+" Disable K looking stuff up
+map K <Nop>
+
+" When loading text files, wrap them and don't split up words.
+au BufNewFile,BufRead *.txt setlocal wrap
+au BufNewFile,BufRead *.txt setlocal lbr
+au BufNewFile,BufRead *.txt setlocal nolist " Don't display whitespace
+
+" Merge a tab into a split in the previous window
+function! MergeTabs()
+  if tabpagenr() == 1
+    return
+  endif
+  let bufferName = bufname("%")
+  if tabpagenr("$") == tabpagenr()
+    close!
+  else
+    close!
+    tabprev
+  endif
+  split
+  execute "buffer " . bufferName
+endfunction
+
+nmap <C-W>u :call MergeTabs()<CR>
+
+" Don't add the comment prefix when I hit enter or o/O on a comment line.
+set formatoptions-=or
+
+let g:CommandTMatchWindowAtTop=1
+
+au BufWritePre *.rb :%s/\s\+$//e
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" RENAME CURRENT FILE (thanks Gary Bernhardt)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! RenameFile()
+    let old_name = expand('%')
+    let new_name = input('New file name: ', expand('%'), 'file')
+    if new_name != '' && new_name != old_name
+        exec ':saveas ' . new_name
+        exec ':silent !rm ' . old_name
+        redraw!
+    endif
+endfunction
+map <Leader>ren :call RenameFile()<cr>
+
