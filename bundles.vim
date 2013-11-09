@@ -48,6 +48,10 @@ Bundle 'https://github.com/Lokaltog/powerline'
 Bundle 'https://github.com/godlygeek/tabular'
 Bundle 'https://github.com/tomtom/tcomment_vim'
 Bundle 'https://github.com/ecomba/vim-ruby-refactoring'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
 
 filetype plugin indent on     " and turn it back on!
 
