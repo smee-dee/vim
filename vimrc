@@ -317,8 +317,8 @@ map <leader>spec :!rspec spec<CR>
 
 :au FocusLost * :set norelativenumber
 :au FocusGained * :set relativenumber
-:autocmd InsertEnter * :set norelativenumber
-:autocmd InsertLeave * :set relativenumber
+" :autocmd InsertEnter * :set norelativenumber
+" :autocmd InsertLeave * :set relativenumber
 
 set shiftround " When at 3 spaces and I hit >>, go to 4, not 5.
 set nofoldenable " Say no to code folding...
