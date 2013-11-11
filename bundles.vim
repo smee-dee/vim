@@ -52,6 +52,7 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
+Bundle "git://github.com/bonsaiben/bootstrap-snippets.git"
 
 filetype plugin indent on     " and turn it back on!
 
