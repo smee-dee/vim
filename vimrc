@@ -75,7 +75,7 @@ set formatoptions=n
 " check to make sure vim has been compiled with colorcolumn support
 " before enabling it
 if exists("+colorcolumn")
-  set colorcolumn=100
+  set colorcolumn=79
 endif
 
 "  ---------------------------------------------------------------------------
@@ -96,8 +96,6 @@ endif
 " inoremap <right> <nop>
 
 " Searching / moving
-nnoremap / /\v
-vnoremap / /\v
 set ignorecase
 set smartcase
 set incsearch
