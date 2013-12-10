@@ -29,7 +29,7 @@ set showtabline=2
 
 set title
 set encoding=utf-8
-set scrolloff=20
+set scrolloff=15
 set autoindent
 set smartindent
 set showmode
