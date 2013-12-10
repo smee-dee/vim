@@ -44,7 +44,7 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set number
-set norelativenumber
+set relativenumber
 set undofile
 
 " Auto adjust window sizes when they become current
@@ -313,8 +313,8 @@ map <leader>utf8 muggO<Esc>O# -*- encoding : utf-8 -*-<Esc>`u<CR>
 map <leader>rspec :!bundle exec rspec spec<CR>
 map <leader>spec :!rspec spec<CR>
 
-" :au FocusLost * :set norelativenumber
-" :au FocusGained * :set relativenumber
+:au FocusLost * :set norelativenumber
+:au FocusGained * :set relativenumber
 " :autocmd InsertEnter * :set norelativenumber
 " :autocmd InsertLeave * :set relativenumber
 
