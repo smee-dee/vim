@@ -313,8 +313,8 @@ map <leader>utf8 muggO<Esc>O# -*- encoding : utf-8 -*-<Esc>`u<CR>
 map <leader>rspec :!bundle exec rspec spec<CR>
 map <leader>spec :!rspec spec<CR>
 
-:au FocusLost * :set norelativenumber
-:au FocusGained * :set relativenumber
+" :au FocusLost * :set norelativenumber
+" :au FocusGained * :set relativenumber
 " :autocmd InsertEnter * :set norelativenumber
 " :autocmd InsertLeave * :set relativenumber
 
