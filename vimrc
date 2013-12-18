@@ -257,13 +257,23 @@ endif
 " let g:solarized_termcolors=256
 set background=dark
 color blackboard
-colorscheme ir_black
+colorscheme tir_black
+" hi CursorLine cterm=NONE ctermbg=59 ctermfg=white guibg=darkred guifg=white
 
 "  ---------------------------------------------------------------------------
 "  Misc
 "  ---------------------------------------------------------------------------
 
 
+if exists('$ITERM_PROFILE')
+  if exists('$TMUX')
+    let &t_SI = "\<Esc>[3 q"
+    let &t_EI = "\<Esc>[0 q"
+  else
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+  endif
+end
 
 " When vimrc, either directly or via symlink, is edited, automatically reload it
 autocmd! bufwritepost .vimrc source %
