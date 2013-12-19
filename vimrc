@@ -1,3 +1,4 @@
+set nocompatible
 " vim: nowrap fdm=marker
 "  ---------------------------------------------------------------------------
 "  Plugins
@@ -265,9 +266,7 @@ endif
 "  GnomeTerminal
 "  ---------------------------------------------------------------------------
 "
-if $COLORTERM == 'gnome-terminal'
-  set t_Co=256
-endif
+set t_Co=256
 
 "  ---------------------------------------------------------------------------
 "  Colors
@@ -275,7 +274,7 @@ endif
 " let g:solarized_termcolors=256
 set background=dark
 color blackboard
-colorscheme tir_black
+colorscheme ir_black
 " hi CursorLine cterm=NONE ctermbg=59 ctermfg=white guibg=darkred guifg=white
 
 "  ---------------------------------------------------------------------------
