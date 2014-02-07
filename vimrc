@@ -307,6 +307,8 @@ map ,al <Esc>:Tabularize /=<CR>
 map ,css <Esc>:Tabularize /:\zs/<CR>
 " map ,tabu <Esc>:Tabularize<Space>/
 map ,ex <Esc>:Explore<CR>
+map ,vex <Esc>:Vexplore<CR>
+map ,sex <Esc>:Sexplore<CR>
 map <M-s> :w<CR>
 imap <M-s> <Esc>:w<CR>i
 " set autochdir
