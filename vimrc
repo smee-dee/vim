@@ -48,7 +48,7 @@ endif
 
 set title
 set encoding=utf-8
-set scrolloff=10
+set scrolloff=0
 set autoindent
 set smartindent
 set showmode
@@ -399,9 +399,10 @@ map <Leader>ren :call RenameFile()<cr>
 
 match Error /[\x7f-\xff]/
 
-map <D-j> <esc>4j
-map <D-k> <esc>4k
-map <D-l> <esc>4l
-map <D-h> <esc>4h
+map <D-j> <esc>3j
+map <D-k> <esc>3k
 
 map <S-Tab> <esc>:b #<cr>
+
+let g:netrw_dirhistmax=0
+let g:netrw_dirhist_cnt=0
