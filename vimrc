@@ -396,3 +396,10 @@ endfunction
 map <Leader>ren :call RenameFile()<cr>
 
 match Error /[\x7f-\xff]/
+
+map <D-j> <esc>4j
+map <D-k> <esc>4k
+map <D-l> <esc>4l
+map <D-h> <esc>4h
+
+map <S-Tab> <esc>:b #<cr>
