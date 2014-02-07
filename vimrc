@@ -4,9 +4,9 @@ set nocompatible
 "  Plugins
 "  ---------------------------------------------------------------------------
 
-silent! runtime bundles.vim
+" silent! runtime bundles.vim
 runtime plugins/bclose.vim
-runtime plugins/mru.vim
+" runtime plugins/mru.vim
 
 "  ---------------------------------------------------------------------------
 "  General
@@ -65,6 +65,7 @@ set laststatus=2
 set number
 set relativenumber
 set undofile
+
 
 " Auto adjust window sizes when they become current
 " set winwidth=84
@@ -151,7 +152,7 @@ let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;
 set suffixes+=.old
 
 " rvm-vim automatically as you switch from buffer to buffer
-:autocmd BufEnter * Rvm
+" :autocmd BufEnter * Rvm
 
 "  ---------------------------------------------------------------------------
 "  Function Keys
@@ -178,6 +179,8 @@ let g:AutoCloseProtectedRegions = ["Character"]
 
 " CtrlP
 nmap <leader>f :CtrlP<cr>
+nmap <leader>b :CtrlPBuffer<cr>
+nmap <leader>l :CtrlPMRUFiles<cr>
 let g:ctrlp_show_hidden = 1
 
 " Add settings for tabular
@@ -203,13 +206,6 @@ if exists(":Tab")
   nmap <leader>a: :Tab /:\zs<CR>
   vmap <leader>a: :Tab /:\zs<CR>
 endif
-
-" Powerline
-" set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-
-" Airline
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'powerlineish'
 
 "  ---------------------------------------------------------------------------
 "  Language Mappings
@@ -329,7 +325,7 @@ imap <right> <nop>
 
 map <leader>h <Esc>:noh<CR>
 
-map <leader>l <Esc>:MRU<CR>
+" map <leader>l <Esc>:MRU<CR>
 map <leader>sf <Esc>:FufCoverageFile<CR>
 map <leader>sl <Esc>:FufLine<CR>
 
