@@ -399,10 +399,17 @@ map <Leader>ren :call RenameFile()<cr>
 
 match Error /[\x7f-\xff]/
 
-map <D-j> <esc>3j
-map <D-k> <esc>3k
+map <D-j> <esc>2j
+map <D-k> <esc>2k
 
 map <S-Tab> <esc>:b #<cr>
 
 let g:netrw_dirhistmax=0
 let g:netrw_dirhist_cnt=0
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
