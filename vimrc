@@ -48,7 +48,7 @@ endif
 
 set title
 set encoding=utf-8
-set scrolloff=0
+set scrolloff=10
 set autoindent
 set smartindent
 set showmode
@@ -417,7 +417,7 @@ imap jj <esc>
 vmap v <esc>
 
 " popup menu behavior
-inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
+" inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
 inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
