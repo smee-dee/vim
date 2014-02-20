@@ -95,7 +95,7 @@ set formatoptions=n
 " check to make sure vim has been compiled with colorcolumn support
 " before enabling it
 if exists("+colorcolumn")
-  set colorcolumn=79
+  set colorcolumn=80
 endif
 
 "  ---------------------------------------------------------------------------
@@ -414,6 +414,9 @@ map <Leader>l :call RunLastSpec()<CR>
 " map <Leader>a :call RunAllSpecs()<CR>
 
 imap jj <esc>
+imap Jj <esc>
+imap jJ <esc>
+imap JJ <esc>
 vmap v <esc>
 
 " popup menu behavior
