@@ -399,8 +399,8 @@ map <Leader>ren :call RenameFile()<cr>
 
 match Error /[\x7f-\xff]/
 
-map <D-j> <esc>}
-map <D-k> <esc>{
+map <D-j> }
+map <D-k> {
 
 map <S-Tab> <esc>:b #<cr>
 
