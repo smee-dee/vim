@@ -146,7 +146,7 @@ nmap <leader>d :Bclose<CR>
 nmap <leader>D :bufdo bd<CR>
 
 " Ignore some binary, versioning and backup files when auto-completing
-set wildignore=.svn,CVS,.git,*.swp,*.jpg,*.png,*.gif,*.pdf,*.bak
+set wildignore=.svn,CVS,.git,*.swp,*.jpg,*.png,*.gif,*.pdf,*.bak,*source_maps*
 let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**"
 " Set a lower priority for .old files
 set suffixes+=.old
