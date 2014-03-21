@@ -430,3 +430,9 @@ inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 let g:vimrubocop_config = '/Users/schmiddi/code/kaeuferportal/cms/.rubocop.yml'
 let g:vimrubocop_keymap = 0
 nmap <Leader>r :RuboCop<CR>
+
+" Move the splits arround!
+nmap <silent> <c-s-k> <C-W>k
+nmap <silent> <c-s-j> <C-W>j
+nmap <silent> <c-s-h> <C-W>h
+nmap <silent> <c-s-l> <C-W>l
