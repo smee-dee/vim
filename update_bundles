@@ -25,7 +25,8 @@ git_bundles = [
   'git://github.com/cakebaker/scss-syntax.vim.git',
   'git@github.com:thoughtbot/vim-rspec.git',
   'git@github.com:ngmy/vim-rubocop.git',
-  'git@github.com:mileszs/ack.vim.git'
+  'git@github.com:mileszs/ack.vim.git',
+  'git://github.com/AndrewRadev/vim-eco'
 ]
 
 vim_org_scripts = [
