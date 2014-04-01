@@ -26,7 +26,8 @@ git_bundles = [
   'git@github.com:thoughtbot/vim-rspec.git',
   'git@github.com:ngmy/vim-rubocop.git',
   'git@github.com:mileszs/ack.vim.git',
-  'git://github.com/AndrewRadev/vim-eco'
+  'git://github.com/AndrewRadev/vim-eco',
+  'git@github.com:elzr/vim-json.git'
 ]
 
 vim_org_scripts = [
