@@ -131,7 +131,7 @@ nmap N Nzz
 " nnoremap <leader>a :Ack
 
 " AG
-nnoremap <leader>a :Ag
+nnoremap <leader>a :Ack
 "
 " Easy commenting
 " nnoremap // :TComment<CR>
