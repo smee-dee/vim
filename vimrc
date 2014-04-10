@@ -178,10 +178,17 @@ let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': 
 let g:AutoCloseProtectedRegions = ["Character"]
 
 " CtrlP
-nmap <leader>f :CtrlP<cr>
-nmap <leader>b :CtrlPBuffer<cr>
-nmap <leader>l :CtrlPMRUFiles<cr>
-let g:ctrlp_show_hidden = 1
+" nmap <leader>f :CtrlP<cr>
+" nmap <leader>b :CtrlPBuffer<cr>
+" nmap <leader>l :CtrlPMRUFiles<cr>
+" let g:ctrlp_show_hidden = 1
+
+" Command-T
+let g:CommandTMaxFiles=2000000
+let g:CommandTMatchWindowAtTop=0
+let g:CommandTMatchWindowReverse=1
+nmap <leader>f :CommandT<cr>
+nmap <leader>b :CommandTBuffer<cr>
 
 " Add settings for tabular
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
@@ -378,8 +385,6 @@ nmap <C-W>u :call MergeTabs()<CR>
 
 " Don't add the comment prefix when I hit enter or o/O on a comment line.
 set formatoptions-=or
-
-let g:CommandTMatchWindowAtTop=1
 
 au BufWritePre *.rb :%s/\s\+$//e
 
