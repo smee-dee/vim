@@ -188,6 +188,7 @@ let g:CommandTMaxFiles=2000000
 let g:CommandTMatchWindowAtTop=0
 let g:CommandTMatchWindowReverse=1
 let g:CommandTRefreshMap='<F5>'
+let g:CommandTHighlightColor='Pmenu'
 nmap <leader>f :CommandT<cr>
 nmap <leader>b :CommandTBuffer<cr>
 
