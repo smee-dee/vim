@@ -159,7 +159,7 @@ set suffixes+=.old
 "  ---------------------------------------------------------------------------
 
 " Press F5 to toggle GUndo tree
-nnoremap <F5> :GundoToggle<CR>
+" nnoremap <F5> :GundoToggle<CR>
 
 " indent file and return cursor and center cursor
 map   <silent> <F6> mmgg=G`m^zz
@@ -187,6 +187,7 @@ let g:AutoCloseProtectedRegions = ["Character"]
 let g:CommandTMaxFiles=2000000
 let g:CommandTMatchWindowAtTop=0
 let g:CommandTMatchWindowReverse=1
+let g:CommandTRefreshMap='<F5>'
 nmap <leader>f :CommandT<cr>
 nmap <leader>b :CommandTBuffer<cr>
 
