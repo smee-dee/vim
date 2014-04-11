@@ -127,11 +127,12 @@ nmap n nzz
 nmap N Nzz
 
 " ACK
-" set grepprg=ack
+" set grepprg=''
 " nnoremap <leader>a :Ack
+nmap <leader>a :tab :split<CR>:Ack
 
 " AG
-nnoremap <leader>a :Ack
+" nnoremap <leader>a :Ack
 "
 " Easy commenting
 " nnoremap // :TComment<CR>
