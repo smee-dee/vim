@@ -428,6 +428,10 @@ imap jJ <esc>
 imap JJ <esc>
 vmap v <esc>
 
+imap oo <esc>o
+imap oO <esc>O
+imap OO <esc>O
+
 " popup menu behavior
 " inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
 inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
