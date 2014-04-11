@@ -69,3 +69,6 @@ puts ''
 puts 'cd ~/.vim/bundle/command-t/ruby/command-t'
 puts '/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby extconf.rb'
 puts 'make'
+
+puts "\n\n\n\n"
+puts "Packages: ack"
