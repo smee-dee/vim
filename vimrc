@@ -130,6 +130,7 @@ nmap N Nzz
 " set grepprg=''
 " nnoremap <leader>a :Ack
 nmap <leader>a :tab :split<CR>:Ack
+nmap <leader>A :tab :split<CR>:Ack <C-r><C-w><CR>
 
 " AG
 " nnoremap <leader>a :Ack
