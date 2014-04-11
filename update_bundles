@@ -28,7 +28,8 @@ git_bundles = [
   'git@github.com:ngmy/vim-rubocop.git',
   'git@github.com:mileszs/ack.vim.git',
   'git://github.com/AndrewRadev/vim-eco',
-  'git@github.com:elzr/vim-json.git'
+  'git@github.com:elzr/vim-json.git',
+  'git://github.com/joequery/Stupid-EasyMotion'
 ]
 
 vim_org_scripts = [
