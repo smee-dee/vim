@@ -340,6 +340,8 @@ imap <left> <nop>
 imap <right> <nop>
 
 map <leader>h <Esc>:noh<CR>
+map <Leader>h :set invhls <CR>
+set hls!
 
 " map <leader>l <Esc>:MRU<CR>
 map <leader>sf <Esc>:FufCoverageFile<CR>
