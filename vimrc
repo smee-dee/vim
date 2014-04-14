@@ -24,7 +24,6 @@ syntax enable
 set autoread
 set showtabline=2
 
-
 set timeout         " Do time out on mappings and others
 set timeoutlen=500 " Wait {num} ms before timing out a mapping
 
@@ -453,3 +452,11 @@ nmap <silent> <c-s-k> <C-W>k
 nmap <silent> <c-s-j> <C-W>j
 nmap <silent> <c-s-h> <C-W>h
 nmap <silent> <c-s-l> <C-W>l
+
+" . should run for each line in visual mode
+vnoremap . :normal .<CR>
+
+
+" ruby Hash conversions
+map <Leader>hash19 ^f:xea:<ESC>ldf>
+map <Leader>hash18 ^f:xbi:<ESC>ea =><ESC>
