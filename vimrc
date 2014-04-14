@@ -327,10 +327,14 @@ imap <M-s> <Esc>:w<CR>i
 set foldlevel=20
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:100'
 
-map <up> <nop>
-map <down> <nop>
+nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
+
+map <up> ddkP
+map <down> ddp
 map <left> <nop>
 map <right> <nop>
+vmap <down> dpgp
+vmap <up> dkPgp
 imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
