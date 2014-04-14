@@ -348,7 +348,7 @@ map <leader>sl <Esc>:FufLine<CR>
 let g:syntastic_ruby_exec = 'ruby19'
 
 au BufRead,BufNewFile *.tpl set filetype=smarty
-map <leader>utf8 muggO<Esc>O# -*- encoding : utf-8 -*-<Esc>`u<CR>
+map <leader>utf8 muggO<Esc>O# -*- encoding : utf-8 -*-<Esc>`uk<CR>
 map <leader>rspec :!bundle exec rspec spec<CR>
 map <leader>spec :!rspec spec<CR>
 
