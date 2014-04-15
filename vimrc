@@ -313,15 +313,16 @@ execute pathogen#infect()
 
 set guifont=Monaco:h15
 
-map ,al <Esc>:Tabularize /=<CR>
-map ,css <Esc>:Tabularize /:\zs/<CR>
-" map ,tabu <Esc>:Tabularize<Space>/
-map ,ex <Esc>:Explore<CR>
-map ,vex <Esc>:Vexplore<CR>
-map ,sex <Esc>:Sexplore<CR>
+map <leader>al <Esc>:Tabularize /=<CR>
+map <leader>css <Esc>:Tabularize /:\zs/<CR>
+vmap <leader>css dO<CR><CR><ESC>kp:Tabularize /:\zs/<CR>gp<UP><UP><ESC>jd2j
+vmap <leader>al dO<CR><CR><ESC>kp:Tabularize /=<CR>gp<UP><UP><ESC>jd2j
+
+map <leader>ex <Esc>:Explore<CR>
+map <leader>vex <Esc>:Vexplore<CR>
+map <leader>sex <Esc>:Sexplore<CR>
 map <M-s> :w<CR>
 imap <M-s> <Esc>:w<CR>i
-" set autochdir
 
 set foldlevel=20
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:100'
