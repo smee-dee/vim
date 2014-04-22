@@ -331,10 +331,14 @@ nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 
 map <up> ddkP
 map <down> ddp
-map <left> <nop>
-map <right> <nop>
+map <left> <<
+map <right> >>
+
 vmap <down> dpgp
 vmap <up> dkPgp
+vmap <Left> <gv
+vmap <Right> >gv
+
 imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
